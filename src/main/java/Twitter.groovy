@@ -1,0 +1,4 @@
+
+def Tweet = new Tweet()
+
+

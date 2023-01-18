@@ -1,0 +1,50 @@
+{
+  "testSuiteName": [
+    {
+      "testName": "create 3 users",
+      "testType": "positive",
+      "reportingTo": "ticket name",
+      "testData": [
+        {
+          "userName": "jiri z podebrad",
+          "description": "historical person from podebrady"
+        },
+        {
+          "userName": "Neo the One",
+          "description": "person from Matrix, often called The One"
+        },
+        {
+          "userName": "jiri bez podebrad",
+          "description": "person from Matrix, often called The One"
+        }
+      ]
+    },
+    {
+      "testName": "test UTF-8 chars",
+      "testType": "positive",
+      "reportingTo": "ticket name",
+      "testData": [
+        {
+          "userName": "říříř říříř",
+          "description": "řšíčíš šíč íšč šííš"
+        }
+      ]
+    },
+    {
+      "testName": "test duplicity - cant create two users with same name",
+      "testType": "negative",
+      "reportingTo": "ticket name",
+      "testData": [
+        {
+          "userName": "Neo the One",
+          "description": "person from Matrix, often called The One"
+        },
+        {
+          "userName": "Neo the One",
+          "description": "person from Matrix, often called The One"
+        }
+      ]
+    }
+  ]
+}
+

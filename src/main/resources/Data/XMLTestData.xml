@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <testSuiteName>
+        <testName>create 3 users</testName>
+        <testType>positive</testType>
+        <reportingTo>ticket name</reportingTo>
+        <testData>
+            <userName>jiri z podebrad</userName>
+            <description>historical person from podebrady</description>
+        </testData>
+        <testData>
+            <userName>Neo the One</userName>
+            <description>person from Matrix, often called The One</description>
+        </testData>
+        <testData>
+            <userName>jiri bez podebrad</userName>
+            <description>person from Matrix, often called The One</description>
+        </testData>
+    </testSuiteName>
+    <testSuiteName>
+        <testName>test UTF-8 chars</testName>
+        <testType>positive</testType>
+        <reportingTo>ticket name</reportingTo>
+        <testData>
+            <userName>říříř říříř</userName>
+            <description>řšíčíš šíč íšč šííš</description>
+        </testData>
+    </testSuiteName>
+    <testSuiteName>
+        <testName>test duplicity - cant create two users with same name</testName>
+        <testType>negative</testType>
+        <reportingTo>ticket name</reportingTo>
+        <testData>
+            <userName>Neo the One</userName>
+            <description>person from Matrix, often called The One</description>
+        </testData>
+        <testData>
+            <userName>Neo the One</userName>
+            <description>person from Matrix, often called The One</description>
+        </testData>
+    </testSuiteName>
+</root>
